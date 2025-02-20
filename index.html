@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Muchh</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #4CAF50;
+            padding: 0 10px;
+        }
+        .header {
+            background-color: #4CAF50;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo {
+            width: 140px;
+            height: 140px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .logo img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+        .brand-name {
+            font-size: 28px;
+            color: white;
+            font-weight: bold;
+        }
+        .contact-btn {
+            background-color: white;
+            color: green;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-sizing: border-box;
+        }
+        .section {
+            display: flex;
+            width: calc(100% - 40px);
+            height: 500px;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f8f8f8;
+            padding: 10px;
+            margin: 5px auto;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        .section.small {
+            display: flex;
+            width: calc(100% - 40px);
+            align-items: center;
+            justify-content: space-between;
+            background-color:#4CAF50;
+            padding: 10px;
+            margin: 5px auto;
+            border-radius: 10px;
+            box-sizing: border-box;
+            height: 200px;
+        }
+        
+        .text {
+            flex: 1;
+            margin: 12px;
+            padding: 10px;
+        }
+        .text-end {
+            flex: 1;
+            text-align: end;
+            margin: 12px;
+            padding: 10px;
+        }
+        .image {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: 100%;
+            margin: 12px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: green;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            color: white;
+            flex-shrink: 0;
+            margin-top: 20px;
+        }
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex: 1;
+            padding: 0 10px;
+        }
+        .footer-section p {
+            margin: 5px 0;
+        }
+        .divider {
+            width: 2px;
+            background-color: white;
+            height: 100%;
+        }
+        .horizontal-divider {
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            margin: 10px 0;
+        }
+        .footer-bottom {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="./assets/dairymuchh_logo_transparent.png" alt="Logo">
+            </div>
+            <div class="brand-name">Dairy Muchh</div>
+        </div>
+        <button class="contact-btn">Contact Us</button>
+    </header>
+
+    <div class="content">
+        <div class="section">
+            <div class="text">
+                <h2>What is Lorem Ipsum?</h2>
+                <p>                    
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+            </div>
+            <div class="image">
+                <img src="./assets/image1.webp" alt="Section 1 Image">
+            </div>
+        </div>
+        <div class="section">
+           
+            <div class="image">
+                <img src="./assets/image2.webp" alt="Section 2 Image">
+            </div>
+            <div class="text-end">
+                <h2>What is Lorem Ipsum?</h2>
+                <p>                    
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="text">
+                <h2>What is Lorem Ipsum?</h2>
+                <p>                    
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+            </div>
+            <div class="image">
+                <img src="./assets/image1.webp" alt="Section 3 Image">
+            </div>
+        </div>
+        <div class="section">
+            
+            <div class="image">
+                <img src="./assets/tenpercent (2).webp" alt="Section 4 Image">
+            </div>
+            <div class="text-end">
+                <h2>What is Lorem Ipsum?</h2>
+                <p>                    
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="text">
+                <h2>What is Lorem Ipsum?</h2>
+                <p>                    
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+            </div>
+            <div class="image">
+                <img src="./assets/tenpercent (1).webp" alt="Section 5 Image">
+            </div>
+        </div>
+        <div class="content">
+            <div class="section small">
+                <div class="image">
+                    <img src="./assets/android_tranparent.png" alt="Section 6 Image 2">
+                </div>
+                <div class="image">
+                    <img src="./assets/ios_tranparent.png" alt="Section 6 Image 2">
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-section">
+                <p>Privacy Policy</p>
+                <p>Refund Policy</p>
+                <p>Terms of Use</p>
+            </div>
+            <div class="divider"></div>
+            <div class="footer-section">
+                <p>Company Address</p>
+                <p>Company Phone</p>
+                <p>Company Email</p>
+            </div>
+        </div>
+        <div class="horizontal-divider"></div>
+        <div class="footer-bottom">
+            &copy; All rights reserved by Dairy Muchh
+        </div>
+    </footer>
+</body>
+</html>
