@@ -3,341 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dairy Muchh</title>
-    <style>
-        body {
-            background-color: #4caf50;
-            margin: 20px;
-            font-family: Arial, sans-serif;
-            padding: 0px;
-            display: flex;
-            flex-direction: column;
-            margin: 10px;
-        }
-
-        .header {
-            background-color: #4caf50;
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-        }
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        .logo {
-            width: 140px;
-            height: 140px;
-            background-color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-        .logo img {
-            width: 120px;
-            height: 120px;
-            object-fit: contain;
-        }
-        .brand-name {
-            font-size: 28px;
-            color: white;
-            font-weight: bold;
-        }
-        .contact-btn {
-            background-color: white;
-            color: green;
-            border: #4caf50;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-
-        .content{
-            flex-grow: 1;
-            padding: 10px;
-            margin: 5px;
-            border-radius: 16px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            box-sizing: border-box;
-        }
-
-        .section {
-            display: flex;
-            height: 500px;
-            width: 100%;
-            height: 500px;
-            align-items: center;
-            justify-content: space-between;
-            background-color:white;
-            padding: 10px;
-            margin: 5px auto;
-            border-radius: 10px;
-            box-sizing: border-box;
-        }
-
-        .text {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 12px;
-            flex: 1;
-            padding: 10px;
-            
-            
-        }
-        
-        .text-1 {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 12px;
-            flex: 1;
-            padding: 10px;
-            text-align: center;
-            
-            
-        }
-        
-
-        .image {width: 200%;
-           
-            display: flex;
-            flex: 1;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .image img {
-            height: auto;
-            width: 500PX;
-            border-radius: 20px;
-            margin: 10px;
-            object-fit: cover ;
-        }
-
-        .section2{
-            display: flex;
-            height: 100%;
-            width: 100%;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px;
-            margin: 5px auto;
-            border-radius: 10px;
-            box-sizing: border-box;
-        }
-
-        
-    
-        
-        .footer { 
-            background-color: #4caf50;
-            height: 200px;
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            color: white;
-            flex-direction: column;
-            flex-shrink: 0;
-            margin-top: 20px;
-            
-        }
-
-        .footer1{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-
-        .footer-section{
-            flex-direction: column;
-            padding: 0 10px;
-            align-items:center ;
-            text-align:center;
-            flex: 1;
-            display: flex;
-        }
-        .footer-section p {
-            margin: 10px;
-            font-weight: bold;
-            padding: 10px;
-            text-transform: uppercase;
-            align-items: center;
-            
-
-        }
-
-        .divider{
-            background-color: white;
-            height: 100%;
-            width: 2px;
-            margin-bottom: -30px;
-        }
-
-        
-        .line {
-            width: 100%;
-            height: 2px;
-            background-color: white;
-            margin: -40px;
-        }
-        .footer2 {
-            text-align: center;
-            color: white;
-            background-color: #4caf50;
-            font-weight: bold;
-            margin-top: 50px;
-        }
-    </style>
-
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-
 <body>
 
-    <header class="header">
-        <div class="logo-container">
-            <div class="logo">
-                <img src="./assets/dairymuchh_logo_transparent.png" alt="Logo"> 
-            </div>
-            <div class="brand-name">Dairy Muchh</div>
-        </div>
-        <button class="contact-btn" onclick="window.location.href='contact.html'" > Contact Us </button>
+    <header>
+        <nav>
+            <div class="logo">Dairy Muchh</div>
+            <div class="hamburger" id="hamburger">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Know Your Milk</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
     </header>
-    <hr />
-
-    <div class="content">
-        <div class="section">
-
-            <div class="image">
-                <img src="./assets/tenpercent (2).webp" alt=" our product">
-             </div>
-            <div class="text-1">
-                <h1>OUR PRODUCT</h1>
-                <p>Nature's gift of dairy has a fascinating taste, and with over three and a half years of dairy expertise in TELANGANA, 
-                    <b>DAIRY MUCHH MILK</b> has perfected the processes that allow it to capture this SMOOTH, 
-                    RICH AND CREAMY EXPERIENCE, the way nature meant it to be. 
-                    Milk should be packed in food-grade poly pack to retain its natural properties within its shelf life. 
-                    Each packet of milk should be marked for <b>QUALITY AND PURITY</b>.</p>
-                    <b><p>SUBSCRIBE NOW TO ENJOY A HEALTHY MILK & MORE</p></b>
-             </div>
-             
-            
-     </div>
-
-
-     
-        <div class="section">
-            <div class="text">
-                <h1>WHY CHOOSE DAIRY MUCHH MILK..?</h1>
-                <p><b>DAIRY MUCHH MILK</b> is free from pathogens, chemical contaminants, 
-                 be of acceptable smell, taste and flavor and should have the potential to maintain its quality under 
-                 ideal storage conditions.</p>
-                 <b><P>WE ARE OFFERING 10% OFF AS A OPENING OFFER</P></b>
-                 <h2><p><b>HURRY.....GRAB THE DEAL NOW....!</NOW></b></p></h2>
-             </div>
-             <div class="image">
-                <img src="./assets/tenpercent (1).webp" alt="WHY CHOOSE DAIRY MUCHH MILK..?">
-             </div>
-        </div>
-
-
-
-
-
-    </div>
-
-
-    <div class="content">
-        <div class="section">
-
-            <div class="image">
-                <img src="./assets/image1.webp" alt=" dairy product">
-             </div>
-            <div class="text-1">
-                <h1>OUR DAIRY PRODUCT'S</h1>
-                <p> Our products include Milk, Cheese, Paneer, Ghee and Yogurt. <b>DAIRY MUCHH</b> dairy products are derived from milk, which has been an important source of nutrition 
-                    for people.</p>
-             </div>
-             
-            
-     </div>
-
-
-     
-        <div class="section">
-            <div class="text">
-                <h1>HISTORY OF OUR MILK</h1>
-                <p> <b>DAIRY MUCHH</b> Milk is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food. 
-                    Our milk contains many nutrients, including calcium and protein, 
-                    as well as lactose and saturated fat.</p>
-                    <p>More than twenty eight million people in Telangana consume <b>DAIRY MUCHH</b> milk and milk products.</p>
-             </div>
-             <div class="image">
-                <img src="./assets/image2.webp" alt="history of MILK">
-             </div>
-        </div>
-
-
-    </div>
-
     
 
-
-    <div class="content">
-        <div class="section">
-            <div class="image">
-                <img src="./assets/image1.webp" alt="history of dairy">
-             </div>
-            <div class="text-1">
-                <h1>HISTORY OF DAIRY MUCHH DAIRY</h1>
-                <p><b>DAIRY MUCHH </b>Dairy got its start in what is now TELANGANA in about 2022 ,
-                    the first milk from animals was turned into yogurt, cheese, and butter. 
-                    <b>DAIRY MUCHH</b> has the TELANGANA'S largest dairy, 
-                    producing over 30 million liters of milk everyday. <b>DAIRY MUCHH</b> is first among all DAIRIES  in both production and selling of milk. 
-                    Most of the milk is domestically consumed.</p>
-             </div>
-             
-        </div>
-
-
-        <div class="content">
-            <div class="section2">
-                <div class="image">
-                    <img src="./assets/android_tranparent.png" alt="android_tranparent" onclick="window.location.href= 'https://play.google.com/store/apps/dev?id=5062722545609802920&hl=en_IN'">
-                    <img src="./assets/ios_tranparent.png" alt="ios_tranparent" onclick="window.location.href= 'https://play.google.com/store/apps/dev?id=5062722545609802920&hl=en_IN'">
-                </div>  
+    <section class="hero">
+        <div class="hero-content">
+            <img src="milk-packet.png" alt="Milk Packet">
+            <div class="text">
+                <h1>Our Milk Takes Daily Exams!</h1>
+                <p>Tested daily for antibiotics, hormones, and additives—it takes more tests than any college kid! Only milk that aces every test is delivered to your doorstep.</p>
+                <button>Get your Packet of Health</button>
             </div>
         </div>
- 
-</body>
-<footer class="footer">
-    <div class="footer1">
-        <div class="footer-section">
-            <p>Privacy policy</p>
-            <p>Refund Policy</p>
-            <p>Terms of Use</p>
+    </section>
+
+    <div class="section">
+        <div class="text">
+            <h1>WHY CHOOSE DAIRY MUCHH MILK..?</h1>
+            <p><b>DAIRY MUCHH MILK</b> is free from pathogens, chemical contaminants, 
+                be of acceptable smell, taste, and flavor, and should have the potential to maintain its quality under 
+                ideal storage conditions.</p>
+            <b><p>WE ARE OFFERING 10% OFF AS A OPENING OFFER</p></b>
+            <h2><p><b>HURRY.....GRAB THE DEAL NOW....!</b></p></h2>
         </div>
-        <div class="divider"></div>
-        <div class="footer-section">
-            <p>Company Address</p>
-            <p>Company Phone</p>
-            <p>Company Email</p>
+        <div class="image">
+            <img src="tenpercentoff.webp" alt="WHY CHOOSE DAIRY MUCHH MILK..?">
         </div>
     </div>
-</div>
-<div class="line"></div>
-<div class="footer2">
-    <b>&copy; All rights reserved by Dairy Muchh </b>
-</div>
 
-    
+    <!-- Section 2 -->
+    <div class="section">
+        <div class="text">
+            <h1>FRESH & PURE MILK</h1>
+            <p>Our milk is sourced from the best farms, ensuring it is 100% pure and fresh.</p>
+        </div>
+        <div class="image">
+            <img src="tenpercentoff.webp" alt="Fresh & Pure Milk">
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+        <div class="text">
+            <h1>NO PRESERVATIVES</h1>
+            <p>We do not add any harmful preservatives, making our milk safe and natural.</p>
+        </div>
+        <div class="image">
+            <img src="tenpercentoff.webp" alt="No Preservatives">
+        </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section">
+        <div class="text">
+            <h1>RICH IN NUTRIENTS</h1>
+            <p>Our milk is packed with essential nutrients like Calcium, Vitamin D, and Protein.</p>
+        </div>
+        <div class="image">
+            <img src="tenpercentoff.webp" alt="Rich in Nutrients">
+        </div>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section">
+        <div class="text">
+            <h1>DOORSTEP DELIVERY</h1>
+            <p>Enjoy fresh milk delivered straight to your home every morning.</p>
+        </div>
+        <div class="image">
+            <img src="tenpercentoff.webp" alt="Doorstep Delivery">
+        </div>
+    </div>
+    <div class="whatsapp-icon" onclick="openWhatsApp()">
+        <img src="whatsapp-logo.png" alt="WhatsApp">
+
+    </div>
    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById("hamburger");
+            const navLinks = document.getElementById("nav-links");
 
+            hamburger.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+        });
+        function openWhatsApp() {
+            window.location.href = "https://wa.me/yourwhatsappnumber"; // Replace with your WhatsApp number
+        }
+    </script>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <div class="logo">Dairy Muchh</div>
+            <p>We have a vision of setting a new benchmark in the milk industry with superior quality dairy products, a sustainable ecosystem, and a thriving relationship with our farmers.</p>
+        </div>
+        <div class="footer-middle">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Know Your Milk</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 Dairy Muchh. All rights reserved</p>
+        <ul>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
 </footer>
+
 </html>
