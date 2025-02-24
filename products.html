@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Muchh Farm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            background: white;
+            padding: 15px;
+            margin: 10px;
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .contact {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+            .product {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dairy Muchh Farm – Pure, Fresh, and Wholesome Dairy Products</h1>
+        <p>We provide the freshest and purest dairy products directly from our farm to your home.</p>
+
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <h3>Fresh Farm Milk</h3>
+                <p>100% pure, fresh, and unadulterated milk rich in nutrients.</p>
+            </div>
+            <div class="product">
+                <h3>Desi Ghee</h3>
+                <p>Made using the traditional bilona method for authentic taste.</p>
+            </div>
+            <div class="product">
+                <h3>Curd & Buttermilk</h3>
+                <p>Thick, creamy, and naturally fermented curd and refreshing buttermilk.</p>
+            </div>
+            <div class="product">
+                <h3>Paneer (Cottage Cheese)</h3>
+                <p>Soft, fresh, and rich in protein—ideal for various dishes.</p>
+            </div>
+            <div class="product">
+                <h3>Flavored & Organic Dairy</h3>
+                <p>Delicious flavored milk, lassi, and shrikhand made with natural ingredients.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2>Order Now!</h2>
+        <p>Get fresh milk and dairy products delivered to your doorstep.</p>
+        <p><b>📍 Location:</b> [Your Farm Address]</p>
+        <p><b>📞 Contact Us:</b> <a href="tel:[Your Contact Number]">[Your Contact Number]</a></p>
+        <p><b>🌐 Website/Social Media:</b> <a href="#">[Your Website or Social Media Handle]</a></p>
+    </div>
+</body>
+</html>
