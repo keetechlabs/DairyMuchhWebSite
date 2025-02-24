@@ -133,6 +133,8 @@ footer {
 .footer-left {
     width: 30%;
 }
+.footer-left h2, .contact p, .contact a {
+    color: white;}
 
 .footer-left .logo {
     font-size: 24px;
