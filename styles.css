@@ -108,6 +108,37 @@ button {
     width: 100%;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 40px; 
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-img {
+    width: 40px;  
+    height: auto;
+    margin-right: 10px; 
+}
+
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
 /* HAMBURGER MENU */
 .hamburger {
     display: none;
@@ -399,4 +430,3 @@ footer {
         margin: 0 15px;
     }
 }
-
