@@ -150,7 +150,9 @@ footer {
 .footer-left h2, .contact p, .contact a {
     color: white;
 }
-.logo-
+.logo-down {
+    color: #ffffff;
+}
 
 .footer-left p {
     font-size: 14px;
