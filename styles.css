@@ -288,6 +288,21 @@ footer {
     object-fit: cover;
 }
 
+.faq {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    margin: 5px auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
 
 .faq-container {
     max-width: 800px;
