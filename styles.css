@@ -288,6 +288,7 @@ footer {
     object-fit: cover;
 }
 
+
 .faq-container {
     font-family: Arial, sans-serif;
     display: flex;
@@ -329,6 +330,8 @@ footer {
     display: block;
 }
 
+
+
 @media (max-width: 768px) {
     .section {
         flex-direction: column;
@@ -352,6 +355,10 @@ footer {
     .text {
         width: 100%;
     }
+
+    .faq-container {
+        flex-direction: column;
+    }
     .nav-links {
         display: none;
         flex-direction: column;
@@ -366,9 +373,6 @@ footer {
     }
     .nav-links.active {
         display: flex;
-    }
-    .faq-container {
-        flex-direction: column;
     }
     .hamburger {
         display: block;
