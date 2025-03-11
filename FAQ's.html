@@ -6,81 +6,115 @@
     <title>Dairy Muchh</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
             min-height: 100vh;
             background-color: #f8f8f8;
-             }
-
-             .faq-column h1 {
-                text-align: center;
-             }
+        }
+        .faq-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .faq-column h1 {
+            text-align: center;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+        .contact {
+            background: #317103;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .contact a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .content {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
-
-
-
-<div class="faq-container">
-        
-    <div class="faq-column">
-        <h1>FAQ'S</h1>
-        <hr /> 
-        <br>
-        <div class="faq-item">
-            <div class="question">Q1: How is Dairy Muchh milk so fresh while other brands' milk lasts forever?</div>
-            <div class="answer">Good question! While we deliver raw, farm-fresh milk the very next morning, other brands treat their milk like it's going on a world tour...</div>
-        </div>
-        <div class="faq-item">
-            <div class="question">Q2: Why does your milk spoil in 2-3 days while packet milk lasts for weeks?</div>
-            <div class="answer">Because our <b>Dairy Muchh</b> milk is actually real milk! No preservatives, no chemicals, no ultra-processing...</div>
-        </div>
-        <div class="faq-item">
-            <div class="question">Q3: What's so special about Dairy Muchh milk?</div>
-            <div class="answer">
-                <ul>
-                    <li>We deliver fresh milk</li>
-                    <li>No preservatives, no adulteration, no factory processing</li>
-                    <li>Ethically raised, happy cows & buffaloes</li>
-                    <li>Transparency - You can test our milk anytime!</li>
-                </ul>
+<body>
+    <div class="faq-container">
+        <div class="faq-column">
+            <h1>FAQs</h1>
+            <hr />
+            <br>
+            <div class="faq-item">
+                <div class="question">Q1: How is Dairy Muchh milk so fresh while other brands' milk lasts forever?</div>
+                <div class="answer">Good question! While we deliver raw, farm-fresh milk the very next morning, other brands treat their milk like it's going on a world tour...</div>
             </div>
-        </div>
-        <div class="faq-item">
-            <div class="question">Q4: How do I know your milk is actually chemical-free?</div>
-            <div class="answer">We encourage you to test it yourself! We provide a mini testing kit so you can see the truth...</div>
-        </div>
-
-        <div class="faq-item">
-            <div class="question">Q5: Why does Dairy Muchh milk taste better than packet milk?</div>
-            <div class="answer">Because it's real milk! It hasn't been boiled, processed, stored, and packed into plastic for weeks...</div>
-        </div>
-        <div class="faq-item">
-            <div class="question">Q6: How do I order Dairy Muchh milk?</div>
-            <div class="answer">Simple! Just download our app, place an order, and enjoy fresh farm milk delivered to your home the very next morning!</div>
-        </div>
-        <div class="faq-item">
-            <div class="question">Q7: Why don't you use preservatives? Won't that make the milk “better”?</div>
-            <div class="answer">Oh yes, nothing screams “better” than chemical additives and artificial stabilisers...</div>
-        </div>
-        <div class="faq-item">
-            <div class="question">Q8: What makes Dairy Muchh different from big dairy brands?</div>
-            <div class="answer">
-                <b>Big Dairy Brands:</b><br>
-                ❌ Milk takes a road trip before reaching you.<br>
-                ❌ Boiled, processed, and stored for weeks.<br>
-                ❌ Has an ingredients list longer than it should.<br><br>
-                <b>Dairy Muchh:</b><br>
-                ✅ Fresh Milk arrives at your home.<br>
-                ✅ No preservatives, no chemicals, no processing.<br>
-                ✅ Pure, natural, and packed with nutrients.<br>
-                ✅ Delivered fresh, the way milk is supposed to be.
+            <div class="faq-item">
+                <div class="question">Q2: Why does your milk spoil in 2-3 days while packet milk lasts for weeks?</div>
+                <div class="answer">Because our <b>Dairy Muchh</b> milk is actually real milk! No preservatives, no chemicals, no ultra-processing...</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Q3: What's so special about Dairy Muchh milk?</div>
+                <div class="answer">
+                    <ul>
+                        <li>We deliver fresh milk</li>
+                        <li>No preservatives, no adulteration, no factory processing</li>
+                        <li>Ethically raised, happy cows & buffaloes</li>
+                        <li>Transparency - You can test our milk anytime!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Q4: How do I know your milk is actually chemical-free?</div>
+                <div class="answer">We encourage you to test it yourself! We provide a mini testing kit so you can see the truth...</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Q5: Why does Dairy Muchh milk taste better than packet milk?</div>
+                <div class="answer">Because it's real milk! It hasn't been boiled, processed, stored, and packed into plastic for weeks...</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Q6: How do I order Dairy Muchh milk?</div>
+                <div class="answer">Simple! Just download our app, place an order, and enjoy fresh farm milk delivered to your home the very next morning!</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Q7: Why don't you use preservatives? Won't that make the milk “better”?</div>
+                <div class="answer">Oh yes, nothing screams “better” than chemical additives and artificial stabilisers...</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">Q8: What makes Dairy Muchh different from big dairy brands?</div>
+                <div class="answer">
+                    <b>Big Dairy Brands:</b><br>
+                    ❌ Milk takes a road trip before reaching you.<br>
+                    ❌ Boiled, processed, and stored for weeks.<br>
+                    ❌ Has an ingredients list longer than it should.<br><br>
+                    <b>Dairy Muchh:</b><br>
+                    ✅ Fresh Milk arrives at your home.<br>
+                    ✅ No preservatives, no chemicals, no processing.<br>
+                    ✅ Pure, natural, and packed with nutrients.<br>
+                    ✅ Delivered fresh, the way milk is supposed to be.
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+    <div class="contact">
+        <h2>Order Now!</h2>
+        <p>Get fresh milk and dairy products delivered to your doorstep.</p>
+        <p><b>📍 Location:</b> Plot No. 27, Sy No. 221, Sun Fortune Turkapally 500078.</p>
+        <p><b>📞 Contact Us:</b> <a href="https://api.whatsapp.com/send/?phone=%2B919100921759&text&type=phone_number&app_absent=0"> +919100921759 </a></p>
+        <p><b>🌐 Website/Social Media:</b> <a href="https://keetechlabs.github.io/DairyMuchhWebSite/#">Dairy Muchh.in</a></p>
+    </div>
+</body>
+</html>
