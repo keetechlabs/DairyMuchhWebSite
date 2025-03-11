@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dairy Muchh</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
+   <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
             background-color: #f8f8f8;
         }
-        .container {
+        .faq-container {
             width: 90%;
             max-width: 1200px;
             margin: auto;
             padding: 20px;
-            text-align: center;
         }
-        h1 {
-            color: #2c3e50;
+        .faq-column h1 {
+            text-align: center;
         }
         .content {
             background: white;
@@ -29,8 +32,7 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             text-align: justify;
         }
-
-         .contact {
+       .contact {
             background: #317103;
             color: white;
             padding: 20px;
@@ -38,7 +40,7 @@
             text-align: center;
         }
         .contact a {
-            color: #f1c40f;
+            color: black;
             text-decoration: none;
         }
         @media (max-width: 768px) {
