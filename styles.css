@@ -286,48 +286,55 @@ footer {
     margin: 10px;
     object-fit: cover;
 }
-
-
 .faq-container {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-
-    gap: 20px;
-    max-width: 100%;
-    margin: 50px auto;
-    padding: 20px;
-}
-
-.faq-column {
-    flex: 1 ;
-    background-color: white;
-    padding: 20px;
+    width: 60%;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(7, 7, 7, 0.788);
+    padding: 30px;
 }
+
+
+.faq-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
 
 .faq-item {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
 }
+
 
 .question {
+    font-size: 18px;
     font-weight: bold;
-    color: #333;
-    cursor: pointer;
+    color:black;
+    margin-bottom: 5px;
 }
+
 
 .answer {
-    margin-top: 5px;
+    font-size: 16px;
     color: #555;
-    display: none;
+    margin-top: 10px;
 }
 
-.faq-item:hover .answer {
-    display: block;
+
+.answer ul {
+    list-style: none;
+    padding: 0;
 }
+
+.answer ul li {
+    margin: 5px 0;
+}
+
 
 
 
