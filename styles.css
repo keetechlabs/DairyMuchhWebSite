@@ -66,7 +66,7 @@ nav ul li a {
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 
-.slidebox { font-family: Arial, sans-serif; background: white; }
+.slidebox { font-family: Arial, sans-serif; background: #ffffff; }
 
 .slider-container {
     width: 80%;
