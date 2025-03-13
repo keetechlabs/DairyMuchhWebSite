@@ -44,6 +44,62 @@
         </div>
     </section>
 
+    
+     <div class="slidebox">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="./assets/tenpercent (1).webp" alt="Image 1"></div>
+                <div class="slide"><img src="./assets/tenpercent (2).webp" alt="Image 2"></div>
+                <div class="slide"><img src="./assets/dairymuchh.jpg" alt="Image 3"></div>
+                <div class="slide"><img src="./assets/dairymuchh2.jpg" alt="Image 4"></div>
+            </div>
+        </div>
+    
+        <div class="dots">
+            <span class="dot" onclick="jumpToSlide(0)"></span>
+            <span class="dot" onclick="jumpToSlide(1)"></span>
+            <span class="dot" onclick="jumpToSlide(2)"></span>
+            <span class="dot" onclick="jumpToSlide(3)"></span>
+        </div>
+    
+        <script>
+            let currentIndex = 0;
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            const slider = document.querySelector('.slider');
+            const sliderContainer = document.querySelector('.slider-container');
+    
+            function updateSlider() {
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+    
+            function moveSlide(direction) {
+                currentIndex += direction;
+                if (currentIndex < 0) currentIndex = slides.length - 1;
+                if (currentIndex >= slides.length) currentIndex = 0;
+                updateSlider();
+            }
+    
+            function jumpToSlide(index) {
+                currentIndex = index;
+                updateSlider();
+            }
+    
+            
+            let autoSlideInterval = setInterval(() => moveSlide(1), 1000);
+    
+            
+            sliderContainer.addEventListener("mouseenter", () => clearInterval(autoSlideInterval));
+            sliderContainer.addEventListener("mouseleave", () => autoSlideInterval = setInterval(() => moveSlide(1), 5000));
+    
+            updateSlider();
+        </script>
+    </div>
+
+    
     <div class="section">
         <div class="text">
             <h1>WHY CHOOSE DAIRY MUCHH MILK..?</h1>
