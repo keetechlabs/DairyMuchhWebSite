@@ -496,10 +496,21 @@ footer {
     .footer-left, .footer-middle, .footer-right {
         width: 100%;
         margin-bottom: 20px;
+        justify-content: center;
     }
 
     .footer-right {
         justify-content: center;
         text-align: center;
     }
+    
+    .footer-right ul {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
 }
