@@ -36,6 +36,48 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+        .product img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 5px 0;
+        }
+        .quantity-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0;
+        }
+        .quantity-btn {
+            background-color: #317103;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .quantity {
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .add-to-cart {
+            background-color: #317103;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
         .contact {
             background: #317103;
             color: white;
@@ -47,7 +89,6 @@
             color: #f1c40f;
             text-decoration: none;
         }
-
         @media (max-width: 768px) {
             .products {
                 flex-direction: column;
@@ -67,24 +108,30 @@
         <h2>Our Products</h2>
         <div class="products">
             <div class="product">
+                <img src="https://via.placeholder.com/100" alt="Milk">
                 <h3>Fresh Farm Milk</h3>
-                <p>100% pure, fresh, and unadulterated milk rich in nutrients.</p>
+                <p>Size: 1L</p>
+                <p>100% pure, fresh, and unadulterated milk.</p>
+                <div class="product-price">₹50.00</div>
+                <div class="quantity-container">
+                    <button class="quantity-btn">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-btn">+</button>
+                </div>
+                <div class="add-to-cart">+ Add to Cart</div>
             </div>
             <div class="product">
+                <img src="https://via.placeholder.com/100" alt="Ghee">
                 <h3>Desi Ghee</h3>
-                <p>Made using the traditional bilona method for authentic taste.</p>
-            </div>
-            <div class="product">
-                <h3>Curd & Buttermilk</h3>
-                <p>Thick, creamy, and naturally fermented curd and refreshing buttermilk.</p>
-            </div>
-            <div class="product">
-                <h3>Paneer (Cottage Cheese)</h3>
-                <p>Soft, fresh, and rich in protein—ideal for various dishes.</p>
-            </div>
-            <div class="product">
-                <h3>Flavored & Organic Dairy</h3>
-                <p>Delicious flavored milk, lassi, and shrikhand made with natural ingredients.</p>
+                <p>Size: 500ml</p>
+                <p>Traditional bilona method for authentic taste.</p>
+                <div class="product-price">₹450.00</div>
+                <div class="quantity-container">
+                    <button class="quantity-btn">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-btn">+</button>
+                </div>
+                <div class="add-to-cart">+ Add to Cart</div>
             </div>
         </div>
     </div>
@@ -92,11 +139,9 @@
     <div class="contact">
         <h2>Order Now!</h2>
         <p>Get fresh milk and dairy products delivered to your doorstep.</p>
-        <p><b>📍 Location:</b>  Plot No. 27, Sy No. 221, Sun Fortune Turkapally 500078.</p>
+        <p><b>📍 Location:</b> Plot No. 27, Sy No. 221, Sun Fortune Turkapally 500078.</p>
         <p><b>📞 Contact Us:</b> <a href="https://api.whatsapp.com/send/?phone=%2B919100921759&text&type=phone_number&app_absent=0"> +919100921759 </a></p>
         <p><b>🌐 Website/Social Media:</b> <a href="https://keetechlabs.github.io/DairyMuchhWebSite/#">Diary Muchh.in</a></p>
     </div>
 </body>
 </html>
-
-
