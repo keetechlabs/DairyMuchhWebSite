@@ -35,11 +35,15 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 350px; /* Ensures uniform height */
         }
         .product img {
             width: 100%;
-            height: auto;
+            height: 150px; /* Fixed height for consistency */
+            object-fit: cover;
             border-radius: 10px;
         }
         .price {
@@ -74,7 +78,7 @@
             font-size: 14px;
             cursor: pointer;
             border-radius: 5px;
-            margin-top: 10px;
+            margin-top: auto; /* Ensures button stays at the bottom */
             width: 100%;
         }
         .contact {
