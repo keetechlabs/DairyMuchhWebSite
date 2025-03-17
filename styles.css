@@ -484,3 +484,22 @@ footer {
         height: 12px;
     }
 }
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-right {
+        justify-content: center;
+        text-align: center;
+    }
+}
