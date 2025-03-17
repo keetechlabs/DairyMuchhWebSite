@@ -455,16 +455,8 @@ footer {
     .hamburger {
         display: block;
     }
-}
 
-@media (min-width: 769px) {
-    .hamburger {
-        display: none;
-    }
-    .nav-links {
-        display: flex;
-    }
-      .footer-container {
+     .footer-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -488,6 +480,16 @@ footer {
         justify-content: center;
         margin-top: 15px;
     }
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+    .nav-links {
+        display: flex;
+    }
+     
 }
 
 @media screen and (min-width: 768px) and (max-width: 1600px) {
